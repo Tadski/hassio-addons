@@ -1,0 +1,14 @@
+{
+  "name": "APC UPS Daemon",
+  "version": "0.1",
+  "slug": "apcupsd",
+  "description": "Add-on for apcupsd",
+  "startup": "before",
+  "boot": "auto",
+  "options": {},
+  "devices": ["/dev/bus/usb:/dev/bus/usb:rwm"],
+  "ports": {
+    "3551/tcp": 3551
+  },
+  "schema": {}
+}
