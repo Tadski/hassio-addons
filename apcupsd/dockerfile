@@ -1,0 +1,20 @@
+ARG BUILD_FROM
+FROM $BUILD_FROM
+
+ENV LANG C.UTF-8
+
+RUN chmod 777 /etc/*/*
+RUN mkdir /etc/default/
+RUN touch /etc/default/apcupsd
+
+#install apcupsd
+RUN apk add --no-cache apcupsd
+
+# Port
+EXPOSE 3551
+
+# Copy data for add-on
+COPY run.sh /
+RUN chmod a+x /run.sh
+
+CMD [ "/run.sh" ]
