@@ -6,7 +6,7 @@
   "startup": "before",
   "boot": "auto",
   "options": {},
-  "devices": ["/dev/bus/usb:/dev/bus/usb:rwm"],
+  "devices": ["192.168.100.116:3551"],
   "ports": {
     "3551/tcp": 3551
   },
