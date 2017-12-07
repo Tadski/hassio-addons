@@ -3,7 +3,7 @@
     "version": "0.0.1",
     "slug": "firetv",
     "description": "FireTV App",
-    "url": "https://github.com/Tadski/hassio-addons",
+    "url": "https://github.com/tadski/hassio-addons",
     "startup": "services",
     "boot": "auto",
     "ports": {
